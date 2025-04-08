@@ -1,4 +1,4 @@
-package poker
+package gopoker
 
 import (
 	"encoding/json"

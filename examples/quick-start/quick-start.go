@@ -5,14 +5,14 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/chehsunliu/poker"
+	gopoker "github.com/Josanshuo/go-poker"
 )
 
 func main() {
 	args := os.Args[1:]
 
-	deck := poker.NewDeck()
-	var hand []poker.Card
+	deck := gopoker.NewDeck()
+	var hand []gopoker.Card
 	if len(args) > 0 {
 		n, _ := strconv.Atoi(args[0])
 		hand = deck.Draw(n)
@@ -21,7 +21,7 @@ func main() {
 	}
 	fmt.Println(hand)
 
-	rank := poker.Evaluate(hand)
+	rank := gopoker.Evaluate(hand)
 	fmt.Println(rank)
-	fmt.Println(poker.RankString(rank))
+	fmt.Println(gopoker.RankString(rank))
 }

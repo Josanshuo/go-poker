@@ -1,7 +1,9 @@
 # Poker
 
-[![Build](https://github.com/chehsunliu/poker/actions/workflows/build.yml/badge.svg)](https://github.com/chehsunliu/poker/actions/workflows/build.yml)
-[![GoDoc](https://godoc.org/github.com/chehsunliu/poker?status.svg)](https://godoc.org/github.com/chehsunliu/poker)
+[![Build](https://github.com/Josanshuo/go-poker/actions/workflows/build.yml/badge.svg)](https://github.com/Josanshuo/go-poker/actions/workflows/build.yml)
+[![GoDoc](https://godoc.org/github.com/Josanshuo/go-poker?status.svg)](https://godoc.org/github.com/Josanshuo/go-poker)
+
+Forked from github.com/chehsunliu/poker
 
 Poker is ported from the Python library [worldveil/deuces](https://github.com/worldveil/deuces).
 
