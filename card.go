@@ -15,10 +15,6 @@ var (
 		'h': 2, // hearts
 		'd': 4, // diamonds
 		'c': 8, // clubs
-		'S': 1, // spades
-		'H': 2, // hearts
-		'D': 4, // diamonds
-		'C': 8, // clubs
 	}
 	intSuitToCharSuit = "xshxdxxxc"
 )

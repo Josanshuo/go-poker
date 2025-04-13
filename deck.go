@@ -31,9 +31,14 @@ func (deck *Deck) Shuffle() {
 }
 
 func (deck *Deck) Draw(n int) []Card {
+	cards := deck.Peek(n)
+	deck.cards = deck.cards[n:]
+	return cards
+}
+
+func (deck *Deck) Peek(n int) []Card {
 	cards := make([]Card, n)
 	copy(cards, deck.cards[:n])
-	deck.cards = deck.cards[n:]
 	return cards
 }
 

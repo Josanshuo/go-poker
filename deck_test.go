@@ -30,6 +30,17 @@ func TestDraw(t *testing.T) {
 	assert.True(t, deck.Empty())
 }
 
+func TestPeek(t *testing.T) {
+	deck := NewDeck()
+
+	cards := deck.Peek(5)
+	assert.Len(t, cards, 5)
+	assert.False(t, deck.Empty())
+
+	deck.Peek(52 - 5)
+	assert.False(t, deck.Empty())
+}
+
 func TestEmpty(t *testing.T) {
 	deck := NewDeck()
 	assert.False(t, deck.Empty())
