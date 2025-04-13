@@ -64,6 +64,10 @@ func (c Card) String() string {
 	return string(strRanks[c.Rank()]) + string(intSuitToCharSuit[c.Suit()])
 }
 
+func (c Card) PrettyString() string {
+	return string(strRanks[c.Rank()]) + prettySuits[int(c.Suit())]
+}
+
 func (c Card) Rank() int32 {
 	return (int32(c) >> 8) & 0xF
 }
